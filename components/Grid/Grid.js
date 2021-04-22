@@ -2,27 +2,28 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-  body: {
-    position: "relative",
+  grid: {
     display: "flex",
-    flexDirection: "row",
-    justifyContent: "flex-start",
     alignItems: "center",
-    width: "100%",
-    margin: "1.5rem 0",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    marginTop: "1rem",
     [theme.breakpoints.between('xs', 'sm')]: {
-      margin: "3rem 0",}
-  },
+      width: "100%",
+      flexDirection: "column",
+    }
+  }
 }));
-const BodyWrapper = ({children}) => {
+
+const Grid = ({ children }) => {
 
   const classes = useStyles();
 
   return (
-    <div className={classes.body}>
+    <div className={classes.grid}>
       {children}
     </div>
   );
 };
 
-export default BodyWrapper;
+export default Grid;
