@@ -153,7 +153,7 @@ const Home = () => {
           </Masonry>
         </div>
       </Main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
