@@ -181,7 +181,7 @@ const Home = () => {
             </Typography>
           </div>
           <div className={classes.detailsSubWrapper}>
-            <Typography variant="h4" gutterBottom className={classes.detailsTitle}>
+            <Typography variant="h5" gutterBottom className={classes.detailsTitle}>
               Etiam porttitor, urna id vehicula luctus, quam orci scelerisque lorem.
             </Typography>
           </div>
