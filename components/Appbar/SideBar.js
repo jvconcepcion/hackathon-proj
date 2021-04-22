@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles((theme) => ({
   sideBarWrapper: {
     width: '300px',
-    height: '100vh',
+    height: '100%',
     padding: '0 10px',
     display: 'flex',
     flexDirection: 'column',

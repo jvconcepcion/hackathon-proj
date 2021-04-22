@@ -5,11 +5,11 @@ import Masonry from 'react-masonry-css';
 const useStyles = makeStyles((theme) => ({
   myMasonryGrid: {
     display: "flex",
-    marginLeft: "-30px",
+    marginLeft: "-5px",
     width: "auto",
   },
   myMasonryGridColumn: {
-    paddingLeft: "30px",
+    paddingLeft: "5px",
     backgroundClip: "padding-box"
   }
 }));
