@@ -1,12 +1,27 @@
 import React from 'react';
 import Head from 'next/head';
+import { makeStyles } from '@material-ui/core/styles';
 
-const Header = () => {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%"
+  },
+}));
+
+const Header = ({ children }) => {
+
+  const classes = useStyles();
+
   return (
-    <Head>
-      <title>Hackathon Proj</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <React.Fragment>
+      <Head>
+        <title>Hackathon Proj</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className={classes.root}>
+        {children}
+      </div>
+    </React.Fragment>
   );
 };
 
