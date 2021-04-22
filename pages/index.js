@@ -41,7 +41,6 @@ const useStyles = makeStyles((theme) => ({
    flexDirection: "column",
    justifyContent: "flex-start",
    width: "100%",
-   height: '100vh',
    margin: "0 5em 0 0",
    [theme.breakpoints.between('xs', 'sm')]: {
     width: "100%",
@@ -153,7 +152,7 @@ const Home = () => {
           </Masonry>
         </div>
       </Main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
