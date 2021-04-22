@@ -41,10 +41,11 @@ const useStyles = makeStyles((theme) => ({
    flexDirection: "column",
    justifyContent: "flex-start",
    width: "100%",
-   margin: "0 5em 0 0",
+   height: "100%",
+   padding: "0 5em 0 0",
    [theme.breakpoints.between('xs', 'sm')]: {
     width: "100%",
-    margin: "0",
+    padding: "0",
     height: 'unset',}
   },
   details: {
