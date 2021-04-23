@@ -149,7 +149,7 @@ const Home = () => {
       case "covid-19":
         return (
           <React.Fragment>
-            {matches && (<SideBar />)}
+            {matches && (<SideBar currentCat="covid-19"/>)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
                 <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
@@ -162,7 +162,7 @@ const Home = () => {
       case "criminality":
         return (
           <React.Fragment>
-            {matches && (<SideBar />)}
+            {matches && (<SideBar currentCat="criminality" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
                 <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
@@ -176,7 +176,7 @@ const Home = () => {
       case "economy":
         return (
           <React.Fragment>
-            {matches && (<SideBar />)}
+            {matches && (<SideBar currentCat="economy" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
                 <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
@@ -189,7 +189,7 @@ const Home = () => {
       case "education":
         return (
           <React.Fragment>
-            {matches && (<SideBar />)}
+            {matches && (<SideBar currentCat="education" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
                 <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
@@ -203,7 +203,7 @@ const Home = () => {
       case "gender issues":
         return (
           <React.Fragment>
-            {matches && (<SideBar />)}
+            {matches && (<SideBar currentCat="gender issues" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
                 <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
@@ -366,7 +366,7 @@ const Home = () => {
       case "health":
         return (
           <React.Fragment>
-            {matches && (<SideBar />)}
+            {matches && (<SideBar currentCat="health" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
                 <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
@@ -379,7 +379,7 @@ const Home = () => {
       case "labor":
         return (
           <React.Fragment>
-            {matches && (<SideBar />)}
+            {matches && (<SideBar currentCat="labor" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
                 <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
