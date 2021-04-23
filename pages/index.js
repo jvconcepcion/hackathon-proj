@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-start",
     width: "100%",
     height: "100%",
-    padding: "0 5em 0 0",
+    padding: "0 1em 0 0",
     [theme.breakpoints.between('xs', 'sm')]: {
       width: "100%",
       padding: "0",
