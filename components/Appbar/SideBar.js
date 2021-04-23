@@ -77,15 +77,6 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
             >
               Death Penalty
             </Button>
-            <Button
-              // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
-              classes={({ root: classes.menuBtns, disabled: classes.menuBtnsDisabled })}
-              variant="outlined"
-              color="primary"
-              onClick={() => handleClick()}
-            >
-              Lowering the minimum age of criminal responsibility
-            </Button>
           </React.Fragment>
           )
       case "economy":
@@ -99,15 +90,6 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
               onClick={() => handleClick()}
             >
               Context
-            </Button>
-            <Button
-              // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
-              classes={({ root: classes.menuBtns, disabled: classes.menuBtnsDisabled })}
-              variant="outlined"
-              color="primary"
-              onClick={() => handleClick()}
-            >
-              Stance on TRAIN law 
             </Button>
           </React.Fragment>
           )
