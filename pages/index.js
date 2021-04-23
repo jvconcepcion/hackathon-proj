@@ -213,9 +213,6 @@ const Home = () => {
                 <Link href="https://www.rappler.com/newsbreak/iq/where-senatorial-bets-stand-key-issues-philippines" onClick={(event) => event.preventDefault()}>
                   https://www.rappler.com/newsbreak/iq/where-senatorial-bets-stand-key-issues-philippines
                 </Link>
-                {/* <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
-                  Integer nec iaculis mi. Fusce cursus dapibus finibus. Fusce in leo ut mauris pellentesque mattis nec pellentesque nisl. Vestibulum sagittis pretium facilisis. Ut blandit justo nec velit pretium, ultrices ultrices.
-                </Typography> */}
               </div>
               <div className={classes.detailsSubWrapper}>
                 <Typography variant="h5" gutterBottom className={classes.detailsTitle}>
