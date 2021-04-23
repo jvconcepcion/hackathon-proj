@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Typography, useMediaQuery, Avatar } from '@material-ui/core';
+import { Typography, useMediaQuery, Avatar, Link } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { cardsData } from '@utils/dataStore'
 import { Header, Main, Footer } from '@components/Container';
@@ -210,9 +210,12 @@ const Home = () => {
             {matches && (<SideBar currentCat="gender issues" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
-                <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
+                <Link href="https://www.rappler.com/newsbreak/iq/where-senatorial-bets-stand-key-issues-philippines" onClick={(event) => event.preventDefault()}>
+                  https://www.rappler.com/newsbreak/iq/where-senatorial-bets-stand-key-issues-philippines
+                </Link>
+                {/* <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
                   Integer nec iaculis mi. Fusce cursus dapibus finibus. Fusce in leo ut mauris pellentesque mattis nec pellentesque nisl. Vestibulum sagittis pretium facilisis. Ut blandit justo nec velit pretium, ultrices ultrices.
-                </Typography>
+                </Typography> */}
               </div>
               <div className={classes.detailsSubWrapper}>
                 <Typography variant="h5" gutterBottom className={classes.detailsTitle}>
@@ -398,10 +401,10 @@ const Home = () => {
         <AppBar />
         <div className={classes.menuBarWrapper}>
           <div className={classes.appHeaderWrapper}>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h3" gutterBottom>
               PH PoliTalks
             </Typography>
-            <p>Praesent quis vehicula orci. In non ullamcorper quam, vitae mollis est. Morbi at porttitor sapien, quis mollis arcu. Quisque id dignissim mauris, nec pulvinar dolor.</p>
+            {/* <p>Praesent quis vehicula orci. In non ullamcorper quam, vitae mollis est. Morbi at porttitor sapien, quis mollis arcu. Quisque id dignissim mauris, nec pulvinar dolor.</p> */}
           </div>
           <div className={classes.menuBtnWrapper}>
             <Grid>
