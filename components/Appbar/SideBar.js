@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
   menuBtns: {
     width: "100%",
     margin: "5px 0",
+    padding: "20px 0",
     backgroundColor: "#172139",
     color: "#ffffff",
     borderRadius: "0",
@@ -42,13 +43,13 @@ const SideBar = ({ handleClick = () => console.log("test")}) => {
   return (
     <div className={classes.sideBarWrapper}>
       <Button
-        // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
+        disabled
         classes={({ root: classes.menuBtns, disabled: classes.menuBtnsDisabled })}
         variant="outlined"
         color="primary"
         onClick={() => handleClick()}
       >
-        Sub Category 1
+        Dataset
       </Button>
       <Button
         // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
@@ -57,7 +58,7 @@ const SideBar = ({ handleClick = () => console.log("test")}) => {
         color="primary"
         onClick={() => handleClick()}
       >
-        Sub Category 2
+        Death Penalty
       </Button>
       <Button
         // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
@@ -66,25 +67,7 @@ const SideBar = ({ handleClick = () => console.log("test")}) => {
         color="primary"
         onClick={() => handleClick()}
       >
-        Sub Category 3
-      </Button>
-      <Button
-        // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
-        classes={({ root: classes.menuBtns, disabled: classes.menuBtnsDisabled })}
-        variant="outlined"
-        color="primary"
-        onClick={() => handleClick()}
-      >
-        Sub Category 4
-      </Button>
-      <Button
-        // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
-        classes={({ root: classes.menuBtns, disabled: classes.menuBtnsDisabled })}
-        variant="outlined"
-        color="primary"
-        onClick={() => handleClick()}
-      >
-        Sub Category 5
+        Lowering the minimum age of criminal responsibility
       </Button>
     </div>
   );

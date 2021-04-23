@@ -17,6 +17,7 @@ const Header = ({ children }) => {
       <Head>
         <title>Hackathon Proj</title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
       </Head>
       <div className={classes.root}>
         {children}

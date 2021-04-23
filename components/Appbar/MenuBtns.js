@@ -6,22 +6,27 @@ const useStyles = makeStyles((theme) => ({
   menuBtns: {
     margin: "1rem 10px",
     flexBasis: "10%",
-    backgroundColor: "#172139",
-    color: "#ffffff",
+    color: "#172139",
     borderRadius: "0",
     fontSize: "16px",
     [theme.breakpoints.between('xs', 'sm')]: {
       width: "100%",
       margin: "2px 0",
+      backgroundColor: "#172139",
+      color: "#fff",
     },
     '&:hover': {
       opacity: "0.7",
       backgroundColor: "#172139",
+      [theme.breakpoints.between('xs', 'sm')]: {
+        opacity: "1",
+        color: "#fff",
+      },
     }
   },
   menuBtnsDisabled: {
-    opacity: "0.5",
-    backgroundColor: "#172139",
+    opacity: "0.8 !important",
+    backgroundColor: "#172139 !important",
     color: "#ffffff !important",
   }
 }));
@@ -38,7 +43,6 @@ const MenuButtons = ({
     <Button
         disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
         classes={({ root: classes.menuBtns, disabled: classes.menuBtnsDisabled })}
-        variant="outlined"
         color="primary"
         onClick={() => handleClick()}
       >
