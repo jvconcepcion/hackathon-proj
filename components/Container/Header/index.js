@@ -15,7 +15,7 @@ const Header = ({ children }) => {
   return (
     <React.Fragment>
       <Head>
-        <title>Hackathon Proj</title>
+        <title>PH PoliTalks</title>
         <link rel="icon" href="/favicon.ico" />
         <script src="https://public.flourish.studio/resources/embed.js"></script>
       </Head>

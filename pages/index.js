@@ -79,6 +79,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "20px"
     }
   },
+  underConstructionImg: {
+    width: "100%",
+    height: "100vh",
+  },
   avatarsWrapper: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr",
@@ -156,9 +160,7 @@ const Home = () => {
             {matches && (<SideBar currentCat="covid-19"/>)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
-                <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
-                  Covid-19
-                </Typography>
+              <img className={classes.underConstructionImg} src="https://assets.rappler.com/89659C0CFEC34375850093CA0F895C7D/img/A02AC2415C7647F6BF727C8A1C230411/under-construction-page-01.jpg" />
               </div>
             </div>
           </React.Fragment>
@@ -183,9 +185,7 @@ const Home = () => {
             {matches && (<SideBar currentCat="economy" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
-                <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
-                  Economy
-                </Typography>
+                <img className={classes.underConstructionImg} src="https://assets.rappler.com/89659C0CFEC34375850093CA0F895C7D/img/A02AC2415C7647F6BF727C8A1C230411/under-construction-page-01.jpg" />
               </div>
             </div>
           </React.Fragment>
@@ -373,9 +373,7 @@ const Home = () => {
             {matches && (<SideBar currentCat="health" />)}
             <div className={classes.contentWrapper}>
               <div className={classes.details}>
-                <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
-                  Health
-                </Typography>
+                <img className={classes.underConstructionImg} src="https://assets.rappler.com/89659C0CFEC34375850093CA0F895C7D/img/A02AC2415C7647F6BF727C8A1C230411/under-construction-page-01.jpg" />
               </div>
             </div>
           </React.Fragment>
@@ -385,11 +383,6 @@ const Home = () => {
           <React.Fragment>
             {matches && (<SideBar currentCat="labor" />)}
             <div className={classes.contentWrapper}>
-              <div className={classes.details}>
-                <Typography variant="subtitle1" gutterBottom className={classes.detailsDesc}>
-                  Health
-                </Typography>
-              </div>
               <div dangerouslySetInnerHTML={{ __html: `<iframe src='https://flo.uri.sh/visualisation/3002060/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/3002060/?utm_source=embed&utm_campaign=visualisation/3002060' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>`}}></div>
             </div>
           </React.Fragment>
@@ -406,7 +399,7 @@ const Home = () => {
         <div className={classes.menuBarWrapper}>
           <div className={classes.appHeaderWrapper}>
             <Typography variant="h4" gutterBottom>
-              PHVote Hackathon Product Name
+              PH PoliTalks
             </Typography>
             <p>Praesent quis vehicula orci. In non ullamcorper quam, vitae mollis est. Morbi at porttitor sapien, quis mollis arcu. Quisque id dignissim mauris, nec pulvinar dolor.</p>
           </div>

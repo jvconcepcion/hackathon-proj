@@ -52,7 +52,7 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
               color="primary"
               onClick={() => handleClick()}
             >
-              Dataset
+              Context
             </Button>
             <Button
               // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
@@ -84,7 +84,7 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
               color="primary"
               onClick={() => handleClick()}
             >
-              Dataset
+              Context
             </Button>
             <Button
               // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
@@ -116,7 +116,7 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
               color="primary"
               onClick={() => handleClick()}
             >
-              Dataset
+              Context
             </Button>
             <Button
               // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
@@ -139,7 +139,7 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
               color="primary"
               onClick={() => handleClick()}
             >
-              Dataset
+              Context
             </Button>
             <Button
               // disabled={currentMenuValue === menuTitle.toLowerCase() ? true : false}
@@ -194,7 +194,7 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
               color="primary"
               onClick={() => handleClick()}
             >
-              Dataset
+              Context
             </Button>
             <Button
               classes={({ root: classes.menuBtns, disabled: classes.menuBtnsDisabled })}
@@ -216,7 +216,7 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
               color="primary"
               onClick={() => handleClick()}
             >
-              Dataset
+              Context
             </Button>
           </React.Fragment>
           )
