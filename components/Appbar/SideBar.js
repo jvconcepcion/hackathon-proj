@@ -197,7 +197,6 @@ const SideBar = ({ currentCat, handleClick = () => console.log("test")}) => {
               Dataset
             </Button>
             <Button
-              disabled
               classes={({ root: classes.menuBtns, disabled: classes.menuBtnsDisabled })}
               variant="outlined"
               color="primary"

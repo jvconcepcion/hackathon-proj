@@ -9,12 +9,16 @@ import { Cards } from '@components/Cards';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    position: "relative",
     minHeight: "100vh",
-    padding: "0 0.1rem",
+    padding: "0 0 5em 0",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
-    alignItems: "center"
+    alignItems: "center",
+    [theme.breakpoints.between('xs', 'sm')]: {
+      padding: "0 0 3em 0",
+    }
   },
   appHeaderWrapper: {
     margin: "0 0 0 11em",
@@ -95,7 +99,7 @@ const useStyles = makeStyles((theme) => ({
   avatarsGrid: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr",
-    gridGap: "10px 10px",
+    gridGap: "10px 25px",
     margin: "20px 0",
   },
   avatarLarge: {
@@ -216,7 +220,7 @@ const Home = () => {
                 </Typography>
               </div>
               <div className={classes.avatarsWrapper}>
-                <div className={classes.avatarsFlex}>
+                <div className={`${classes.avatarsFlex} ${classes.avatarsBorder}`}>
                   <Typography variant="h6" gutterBottom>For</Typography>
                   <div className={classes.avatarsGrid}>
                     <div className={classes.avatarAndTextWrapper}>
